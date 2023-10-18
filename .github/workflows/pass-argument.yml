@@ -33,7 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           java -version
-          apt update && sudo apt install maven -y
+          sudo apt update && sudo apt install maven -y
           maven --version
           cd ./mavenDir
           mvn clean test
