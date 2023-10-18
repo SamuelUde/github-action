@@ -34,7 +34,7 @@ jobs:
         run: |
           java -version
           sudo apt-get update && sudo apt-get install maven -y
-          maven --version
+          mvn --version
           cd ./mavenDir
           mvn clean test
           ls -ltr 
