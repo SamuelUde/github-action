@@ -29,7 +29,7 @@ jobs:
           ls -ltr
           java -version
           mvn --version
-      - uses: actions/checkout@v3
+      - uses: ./.github/mycheckout1
         with:
           ref: hands-on
       - run: |
