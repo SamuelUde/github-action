@@ -30,6 +30,8 @@ jobs:
           java -version
           mvn --version
       - uses: actions/checkout@v3
+        with:
+          ref: hands-on
       - run: |
           pwd
           ls -ltr
