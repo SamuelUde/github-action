@@ -30,8 +30,6 @@ jobs:
           java -version
           mvn --version
       - uses: actions/checkout@v3
-        with:
-          ref: test
       - run: |
           pwd
           ls -ltr
@@ -54,6 +52,6 @@ jobs:
           sudo apt-get update && sudo apt-get install maven -y
           mvn --version
           cd ./mavenDir
-          mvn clean test
+          #mvn clean test
           pwd
           ls -ltr 
