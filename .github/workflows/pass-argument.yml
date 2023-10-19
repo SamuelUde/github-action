@@ -31,7 +31,6 @@ jobs:
           mvn --version
       - uses: actions/checkout@v3
         with:
-          repository: SamuelUde/github-action
           ref: test
       - run: |
           pwd
